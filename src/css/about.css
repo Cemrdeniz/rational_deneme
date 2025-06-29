@@ -1,0 +1,57 @@
+.about-us-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutus-photo-p-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.aboutus-photo-p-block p {
+    width: 335px;
+}
+
+.aboutus-image {
+    border-radius: 1000px;
+    width: 300px;
+    height: 200px;
+    background-color: var(--black);
+    object-fit: cover;
+}
+
+.brown {
+    color: var(--brown);
+}
+
+@media (min-width:375px) {
+
+    .aboutus-image {
+        width: 335px;
+        height: 209px;
+    }
+}
+
+@media (min-width:768px) {
+
+    .aboutus-image {
+        width: 704px;
+        height: 340px;
+    }
+}
+
+@media (min-width:1280px) {
+
+    .aboutus-image {
+        width: 488px;
+        height: 260px;
+    }
+
+    .aboutus-photo-p-block p {
+        width: 260px;
+    }
+}
