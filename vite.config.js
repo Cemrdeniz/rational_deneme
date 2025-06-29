@@ -6,6 +6,8 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/Rational1/', // ✅ GitHub Pages için gerekli ayar
+
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
@@ -46,3 +48,4 @@ export default defineConfig(({ command }) => {
     ],
   };
 });
+
